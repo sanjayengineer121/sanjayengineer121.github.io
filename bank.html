@@ -37,12 +37,12 @@
         <div class="column">
           <form onsubmit="return genQR(this)">
             <fieldset>
-              <label for="VPAID">Payee VPA(UPI)</label>
-              <input type="text" placeholder="UPI ID:" id="VPAID">
-              <label for="payee">Payee Name:</label>
-              <input type="text" placeholder="Payee Name" id="payee">
-              <label for="trnote">Transaction Note:</label>
-              <input type="text" placeholder="Transaction Note:" id="trnote">
+              <label for="accNo">Account No:</label>
+              <input type="number" placeholder="Account No:" id="accNo">
+              <label for="ifscCode">IFSC Code</label>
+              <input type="text" placeholder="IFSC Code" id="ifscCode">
+              <label for="accountHolder">Name of person</label>
+              <input type="text" placeholder="Name of the person" id="accountHolder">
               <label for="amount">Amount</label>
               <input type="text" placeholder="Amount" id="amount">
               <input class="button-primary" type="submit" value="Generate QR code">
@@ -53,7 +53,6 @@
             <a href="#" class="button button-green" target="_blank" id="appLink"><strong>Pay using UPI App</strong></a>
             <a onclick="copyToClipboard()" class="button button-blue" target="_blank" id="copyLink"><strong>Copy Link</strong></a>
             <label for="sharelink">Sharable link</label>
-            <a href="bank.html" class="button button-green" target="_blank" id="appLink"><strong>GENERATE BANK ACCOUNT QR</strong></a>
             <input type="text" readonly id="sharelink">
             <img src="//:0" alt="" id="outputImg">
             <div class="row" style="max-width: 375px;">
@@ -91,9 +90,9 @@
         document.execCommand('copy');
       }
 
-      function renderQR(VPAID, payee, trnote,amount){
+      function renderQR(accNo, ifscCode, accountHolder,amount){
 
-        var upiString = 'upi://pay?pa='+ VPAID + '&'+ payee + '&am='+ amount +'&tr='+trnote;
+        var upiString = 'upi://pay?pa='+ accNo + '@'+ ifscCode + '.ifsc.npci&pn='+ accountHolder +'&am='+amount;
 
         var opts = {
           errorCorrectionLevel: 'H',
@@ -118,15 +117,15 @@
       }
 
       function genQR(){
-        var VPAID = $('VPAID').value;
-        var payee = $('payee').value;
-        var trnote = $('trnote').value;
+        var accNo = $('accNo').value;
+        var ifscCode = $('ifscCode').value;
+        var accountHolder = $('accountHolder').value;
         var amount = $('amount').value;
 
-        location.hash = [VPAID,payee,trnote,amount].join(';');
-        $('sharelink').value = 'https://freepay-upi.herokuapp.com/'+VPAID+'/'+amount
+        location.hash = [accNo,ifscCode,accountHolder,amount].join(';');
+        $('sharelink').value = 'https://upiqr.codefind.in/upiqrview.php?name='+accountHolder+'&vpa='+accNo+'@'+ifscCode+'.ifsc.npci&amt='+amount
 
-        renderQR( VPAID, payee, trnote,amount );
+        renderQR( accNo, ifscCode, accountHolder,amount );
         return false;
       }
 
@@ -137,9 +136,9 @@
         if(location.hash.length > 20 ){
           var data = decodeURIComponent( location.hash.slice(1) ).split(';');
 
-          $('VPAID').value = data[0];
-          $('payee').value = data[1];
-          $('trnote').value = data[2];
+          $('accNo').value = data[0];
+          $('ifscCode').value = data[1];
+          $('accountHolder').value = data[2];
           $('amount').value = data[3];
           genQR();
         }
@@ -153,4 +152,5 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 
     <a class="github-fork-ribbon" href="https://github.com/sanjayengineer121/BILLING_API" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  </body>
 </html>
