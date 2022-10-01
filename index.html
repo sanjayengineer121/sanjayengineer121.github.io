@@ -93,7 +93,8 @@
 
       function renderQR(VPAID, payee, trnote,amount){
 
-        var upiString = 'upi://pay?pa='+ VPAID + '&'+ payee + '&am='+ amount +'.0&tr='+trnote;
+        var upiString = 'upi://pay?pn=UPAYI&pa='+ VPAID + '&cu=INR&am'+ amount +'&tr='+trnote;
+        upi://pay?pn=UPAYI&pa=6388574919@paytm&cu=INR&am=10.0
 
         var opts = {
           errorCorrectionLevel: 'H',
