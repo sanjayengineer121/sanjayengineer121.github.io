@@ -50,11 +50,10 @@
           </form>
           <div class="desc link"> <a href="https://github.com/sanjayengineer121">Made with<span class="love">❤️</span> by Er Sanjay</a></div>
           <div class="outputWrapper">
-            <a href="upi://pay?pn=UPAYI&amp;pa=6388574919@paytm&amp;cu=INR&amp;am=10.0" class="btn">Pay Now</a>
             <a href="#" class="button button-green" target="_blank" id="appLink"><strong>Pay using UPI App</strong></a>
             <a onclick="copyToClipboard()" class="button button-blue" target="_blank" id="copyLink"><strong>Copy Link</strong></a>
             <label for="sharelink">Sharable link</label>
-            <a href="bank.html" class="button button-green" id="appLink"><strong>GENERATE BANK ACCOUNT QR</strong></a>
+            <a href="bank.html" class="button button-green" target="_blank" id="appLink"><strong>GENERATE BANK ACCOUNT QR</strong></a>
             <input type="text" readonly id="sharelink">
             <img src="//:0" alt="" id="outputImg">
             <div class="row" style="max-width: 375px;">
@@ -94,9 +93,7 @@
 
       function renderQR(VPAID, payee, trnote,amount){
 
-        var upiString2 = 'upi://pay?pn=UPAYI&pa='+ VPAID + '&cu=INR&am'+ amount;
-        var upiString = "upi://pay?pn=UPAYI&amp;pa="+ VPAID +"&amp;cu=INR&amp;am="+ amount
-        upi://pay?pn=UPAYI&pa=6388574919@paytm&cu=INR&am=10.0
+        var upiString = 'upi://pay?pa='+ VPAID + '&'+ payee + '&am='+ amount +'&tr='+trnote;
 
         var opts = {
           errorCorrectionLevel: 'H',
