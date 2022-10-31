@@ -6,6 +6,38 @@
     <title>UPI QR code generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style type="text/css">
+      body{
+        background: #2C3335;
+      }
+      .card{
+        border: 3px solid #DAE0E2;
+        border-radius: 20px;
+        width: 350px;
+    
+      }
+      .text-box{
+        padding: 10px 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+      .btn{
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .btn:hover{
+        background-color: #019031;
+        padding: 12px 22px;
+      }
+      .card-content{
+        padding: 20px;
+      }
+    </style>
     <style>
       .outputWrapper{
         border: 1px solid #606c76;
@@ -36,6 +68,7 @@
       }
     </style>
   </head>
+<center>
   <div class="outputWrapper">
     <a href="#" class="button button-green" target="_blank" id="appLink"><strong>Pay using UPI App</strong></a>
     <a onclick="copyToClipboard()" class="button button-blue" target="_blank" id="copyLink"><strong>Copy Link</strong></a>
@@ -58,10 +91,7 @@
     
   </div>
   
-</div>
-</div>
 
-</div>
 
 <script src="https://unpkg.com/qrcode@1.4.4/build/qrcode.js" charset="utf-8"></script>
 
@@ -162,6 +192,10 @@ document.write('<a href="' + upiString + '">Google</a>');
             </fieldset>
           </form>
           
-    
+        </div>
+      </div>
+      
+      </div>
+    </center>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </html>
