@@ -159,7 +159,7 @@
       var amount = $('amount').value;
       
       location.hash = [VPAID,payee,trnote,amount].join(';');
-      $('sharelink').value = 'https://freepay-upi.herokuapp.com/'+VPAID+'/'+amount
+      $('sharelink').value = 'https://sanjayengineer121.github.io/UPI/upi.html#'+VPAID+';'+payee+';'+trnote+';'+amount
       
       renderQR( VPAID, payee, trnote,amount );
       return false;
