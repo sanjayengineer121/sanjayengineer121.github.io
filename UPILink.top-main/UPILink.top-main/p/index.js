@@ -144,11 +144,9 @@ function downloadQRCode() {
 }
 
 
-var darkMode = false; // Initialize the darkMode variable
-
 function toggleDarkMode() {
   var body = document.body;
-  var container = document.querySelector('.container'); // Assuming the container has the class "container"
+  // var container = document.querySelector('.container');
 
   darkMode = !darkMode;
 
@@ -162,7 +160,6 @@ function toggleDarkMode() {
     container.style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.1)";
   }
 }
-
 
 function showLoader() {
   var loader = document.getElementById("loader");
@@ -233,7 +230,7 @@ function printQRCode() {
   wrapperElement.style.padding = "20px";
   wrapperElement.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
   wrapperElement.style.borderRadius = "5px";
-  wrapperElement.style.border = "1px solid #FF0000";
+  wrapperElement.style.border = "1px solid #000";
   wrapperElement.style.boxShadow = "0 0 4px rgba(0, 0, 0, 0.4)";
 
   // Clear the existing body content
