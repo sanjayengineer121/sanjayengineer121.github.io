@@ -7,6 +7,7 @@ Pay using UPI | Create your own payment links for free
 </title>
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
 <link href='https://fonts.gstatic.com' rel='preconnect'/>
+<script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
 <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap' rel='stylesheet'/>
 <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap' rel='stylesheet'/>
 <link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' rel='stylesheet'/>
@@ -26,9 +27,7 @@ Pay using UPI | Create your own payment links for free
  </script>
 </head>
 <body>
-<div class='section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
-<div class='blog-posts hfeed'>
-<!-- <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'> -->
+
 <style>
   .pay-title{
    font-family:'Nunito', sans-serif;
@@ -41,7 +40,7 @@ Pay using UPI | Create your own payment links for free
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <div class="hero-body">
     <a href="https://sanjayengineer121.github.io" ><p class="subtitle is-2" style="font-family:'Nunito', sans-serif;">
-      <span style="color:#dd2342;">Er.</span>S<span style="color:#008C3C;">a</span>njay
+      <span style="color:#dd2323;">Er.</span>S<span style="color:#008C3C;">a</span>njay
       </p></a>
     <p class="subtitle is-6" style="font-style:italic;">
       Simple payment links using UPI
@@ -53,14 +52,14 @@ Pay using UPI | Create your own payment links for free
 <div class="box" style="border-style: dashed;border-width: 2px;";>
    <div class="columns mx-2"> <div class="column"><div class="container has-text-centered" style="margin-bottom: 2%;">
       
-      <p class="title is-1 pay-title" style="text-align: left;margin-left: 15%;font-size:35px;">
-      Pay 
+      <p class="title is-1 pay-title" style="text-align: left;margin-left: 12%;font-size:30px; color: black;">
+      Reciever Payment Details
       </p> 
       <div class="box has-text-centred" style="max-width:400px;">
         <div id="payee" class="subtitle is-3" style="color:blue;text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
         <div id="amount" class="subtitle is-4" style="color:rgb(255, 174, 0);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" ></div>
         <div id="name" class="subtitle is-4" style="color:rgb(120, 68, 204);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
-        <div id="note" class="subtitle is-4" style="color:rgba(77, 87, 86, 0.952);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
+        <div id="note" class="subtitle is-4" style="color:rgba(77, 190, 179, 0.952);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
         
       </div>
       
@@ -164,14 +163,36 @@ Please scan the above QR code using any UPI app on your phone.
 
  
   <div class="content has-text-centered">
-    <div class="container"><a class='button is-primary is-rounded is-medium' href='create-link.html'>Create a Link 🔗</a></div>
-    <p class="section">
+    <div class="container"><a class='button is-primary is-rounded is-medium' href='create-link.html'>Create a Payment Link 🔗</a>
+      <!-- <script>
+        window.addEventListener("load", () => {
+          // (C1) CREATE QR
+          var qrc = new QRCode(document.getElementById("qrcode"), {
+            text: "https://code-boxx.com/",
+            width: 100,
+            height: 100,
+            colorDark: "#bf2a2a"
+          });
+        
+          // (C2) PRINT
+          document.getElementById("qrprint").onclick = () => {
+            var printwin = window.open("");
+            printwin.document.write(document.getElementById("printable").innerHTML);
+            printwin.stop();
+            let qr = printwin.document.querySelector("#qrcode img");
+            qr.addEventListener("load", () => {
+              printwin.print();
+              printwin.close();
+            });
+          };
+                </script> -->
+    </div>
+    <p>
       Sanjay Software service. Copyright Reserved. 2023.
     </p>
   </div>
   
-<script src="https://cdn.jsdelivr.net/npm/easyqrcodejs@4.3.4/dist/easy.qrcode.min.js"></script>
-
+<script src="cdn.jsdelivr.net_npm_easyqrcodejs@4.3.4_dist_easy.qrcode.min.js"></script>
 
 <script>
 function iniFrame() {
@@ -301,17 +322,43 @@ if (window.mobileAndTabletCheck()){
      document.getElementById("payusing").style.display="none"; 
     var qrcode = new QRCode(document.getElementById("qrcode"), {
     text: upiString,
-    logo: "logo1.png",
+    logo: "logo.png",
     logoWidth: undefined,
     logoHeight: undefined,
-    logoBackgroundColor: '#C0C0C0',
-    logoBackgroundTransparent: false
+    logoBackgroundColor: 'white',
+    dotScale:1.0,
+    backgroundImage:"IMG_20220213_160119.jpg",
+  
+    PO_TL:'#990099', 
+    // PI_TL:'#00994d', // Posotion Inner color - Top Left 
+    PO_TR:'#990099', // Posotion Outer color - Top Right 
+    // PI_TR:'#cc0066', // Posotion Inner color - Top Right 
+    PO_BL:'#990099', // Posotion Outer color - Bottom Left 
+    // PI_BL:"#3b00b3",
+
+    // AO: '#0000cc', // Alignment Outer. if not set, the defaut is `colorDark`
+    // AI: '#ff3399', // Alignment Inner. if not set, the defaut is `colorDark`
+
+    dotScaleA:1.0,
+    dotScaleAO:1.0,
+    dotScaleAI:1.0,
+    hideBackgroundDots:false,
+    logoBackgroundTransparent: true,
+    version: 5,
+    binary: false,
+    quietZone: 0,
+    quietZoneColor: "rgba(0,0,0,0)",
+    drawer: 'canvas'
+
+    
 });
+
 
   document.getElementById("qrcode").style.marginLeft="auto";
     document.getElementById("qrcode").style.marginRight="auto";
 
 }
+
  
   }
   catch (e){}
@@ -321,13 +368,18 @@ if (window.mobileAndTabletCheck()){
   if (vpa!=null){document.getElementById('payee').innerHTML+=" "+ vpa +"";} else{ document.getElementById('payee').innerHTML+="Create a link first using the button below!"; document.getElementById('onlydesktop').style.display="none"; }
 
     document.title = "Pay "+vpa+" using UPI - UPILink.top | Create your own payment links for free";
+    
 </script>
 
 <div style='clear: both;'></div>
 </div>
-        </div></div>      
+        </div>
+        
+      </div>      
 </div>
 </div></div>
+  });
+
 
 </body>
 <style id='page-skin-1' type='text/css'><!--
