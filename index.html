@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <met#aeb3b8et="utf-8">
-        <title>Online MY Resume</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Sanjay Kumar Yadav</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project">project</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+                </ul>
             </div>
-        </div>
-        <!-- Spinner End -->
-
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image">
-                        <h1 class="text-primary mt-3">Sanjay Kr Yadav</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Python Coder, Flask Developer, Python GUI, Desktop Apps, Apps Developer</div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/engineerstechy"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/profile.php?id=100094422265856&mibextid=9R9pXO"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://in.linkedin.com/in/ersanjay19"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/s.k.editng0"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="img/resume.pdf" class="btn w-50 border-end">Download CV</a>
-                            <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
-                        </div>
+            <div class="d-flex align-items-end justify-content-between border-top">
+                <a href="assets/img/resume.pdf" class="btn w-50 ">Download CV</a>
+                <a href="#contact" class="btn w-50 "> Contact Me</a>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Sanjay Kumar
+                        <span class="text-primary">Yadav</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        144 kewata ka pura, sohansa, Jaunpur U.P,India 222204 · (638) 857-4919 ·
+                        <a href="sanjayyadav11210@gmail.com">sanjayyadav11210@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">Software Developer with 2+ years of experience preparing flawless presentations, assembling facility reports, and maintaining the Software Bugs and New Customers. I am quick learner and swiftly adoptable in different environment. Looking to leverage my knowledge and experience into a role as Software Engineer II..
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://in.linkedin.com/in/ersanjay19" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/sanjayengineer121" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://twitter.com/engineerstechy" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/profile.php?id=100094422265856&mibextid=9R9pXO" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
+<<<<<<< HEAD
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Engineer</h3>
+                            <div class="subheading mb-3">ENSOWT</div>
+                            <p>
+                                ● Schedule and coordinate meetings, appointments, with new customers to show demo and installation.<br>
+                                ● Check the problems and inconvenience with software and find out solution that how to fix that issue.<br>
+                                ● Developed new features so that customers work improves and Find out Software Intigration in billing Software.<br>
+                                ● Develop mini tools similar to WhatsApp promotion and multiple billing supports.<br>
+                                ● Big role in UPI payment Link Development and Auto Update in WhatsApp Api Fetures and More.<br>
+                            </p>
+=======
                 <div class="col-lg-8">
                     <!-- About Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
@@ -94,185 +114,63 @@
                             <div class="col-sm-6 py-1">
                                 <span class="fw-medium text-primary">Freelance:</span> Available
                             </div>
+>>>>>>> de4febb2647e908260a60e9fd901ea59e1b8738d
                         </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <a href="https://github.com/sanjayengineer121/" class="btn w-50 border-end" target="_blank">Resume</a>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Github</p>
-                                        <h5 class="mb-0">Site</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete Mini</p>
-                                        <h5 class="mb-0">Projects</h5>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Nove 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">PYTHON Trainer</h3>
+                            <div class="subheading mb-3">Slog Solutions Pvt Ltd</div>
+                            <p>
+                                ● Develop new content for New Students who is coming to attend training.<br>
+                                ● Arrange test timing and set paper for students.<br>
+                                ● Attend new institute to aware new technology, programming language which in demanding by any Industries and the level of programming language that industries demanding right now.<br>
+                                ● We are helping to reduce university/colleges vs Industries gap and we are ready to fill those gaps<br>
+                            </p>
                         </div>
-                    </section>
-                    <!-- About End -->
-
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">PYTHON</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Flask Web Framework</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Linux</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">PYTHON GUI(TKINTER/CUSTOMTKINTER & TTK BOOSTRA)</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">HTML/CSS/basic js & Bootstrap </p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">SQLite & Mongo db</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">REST API Development</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Oct 2021 - Nov 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Junior Developer</h3>
+                            <div class="subheading mb-3">Lpu</div>
+                            <p>data encryption and decryption Linux Project use fro forensic report and hashing and decoding data</p>
                         </div>
-                    </section>
-                    <!-- Skills End -->
-
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Expericence</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Software Engineer</h5>
-                                <p class="mb-2">ENSOWT | <small>OCT 2021 - Present</small></p>
-                                <p>● Schedule and coordinate meetings, appointments, with new customers to show demo and installation.<br>
-                                    ● Check the problems and inconvenience with software and find out solution that how to fix that issue.<br>
-                                    ● Developed new features so that customers work improves and Find out Software Intigration in billing Software.<br>
-                                    ● Develop mini tools similar to WhatsApp promotion and multiple billing supports.<br>
-                                    ● Big role in UPI payment Link Development and Auto Update in WhatsApp Api Fetures and More.
-                                  </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">PYTHON Trainer</h5>
-                                <p class="mb-2">Slog Solution Pvt. Ltd. | <small>SEP 2021 - OCT 2021</small></p>
-                                <p>
-                                    ● Develop new content for New Students who is coming to attend training.<br>
-                                    ● Arrange test timing and set paper for students. <br>
-                                    ● Attend new institute to aware new technology, programming language which in demanding by any Industries and the level of programming language that 
-                                    industries demanding right now. <br>
-                                    ● We are helping to reduce university/colleges vs Industries gap and we are ready to fill those gaps.
-                                  </p>
-                            </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2018 - March 2020</span></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bachelor of Technology</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Computer Science - Web Development & Cyber Security</div>
+                            <p>GPA: 6.01</p>
                         </div>
-                    </section>
-                    <!-- Expericence End -->
-
-                     <!-- Education Start -->
-                     <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Eduaction</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Bachelor of technology in computer science</h5>
-                                <p class="mb-2">Lovely Professional University(LPU) – Punjab <br> <b><small>June 2021</small></b></p>
-                                <p><b>CGPA : 6.1/10</b></p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">High School & Intermediate Education</h5>
-                                <p class="mb-2">Sarvjanic Inter College ,Mungra Badshahpur,Jnp(up) <br> <b><small>June 2014</small></b></p>
-                                <b>
-                                   <b>Percentage: 72 & 68 </b> 
-                                  </p>
-                            </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2016 - march 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">S.I.C High School</h3>
+                            <div class="subheading mb-3">12<sup>th</sup> and 10<sup>th</sup></div>
+                            <p>1 <sup>st</sup> Division</p>
                         </div>
-                    </section>
-                    <!-- education End -->
+                        <div class="flex-shrink-0"><span class="text-primary">August 2012 - May 2014</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <Br>
 
-
-                    <!-- Subscribe Start -->
-                    <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Subscribe End -->
-
-                    <!-- Services Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
+            <h2 class="mb-5">Services</h1><br>
+            <section class="resume-section" id="project">
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="service-item">
@@ -313,7 +211,7 @@
 
                             <div class="col-md-6">
                                 <div class="service-item">
-                                    <a href="https://ping-app.online/" target="_blank">
+                                    <a href="https://github.com/sanjayengineer121/Daily_Ac_report" target="_blank">
                                     <i class="fas fa-check-double mx-auto mb-4"></i>
                                     <!-- <i class="fas fa-check-double"></i> -->
                                     <h5 class="mb-2">Daily Finance maintaining Software (Desktop Version)</h5></a>
@@ -343,7 +241,7 @@
                             
                             <div class="col-md-6">
                                 <div class="service-item">
-                                    <a href="https://github.com/sanjayengineer121/Ai_Generated_Card">
+                                    <a href="https://github.com/sanjayengineer121/Ai_Generated_Card" target="_blank">
                                     <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
                                     <h5 class="mb-2">Wedding Card Creating By GEN AI</h5></a>
                                     <p class="mb-0">Generate your card in just one second <br>some sample was given kindly check</p>
@@ -364,7 +262,7 @@
                             
                             <div class="col-md-6">
                                 <div class="service-item">
-                                    <a href="https://github.com/sanjayengineer121/Rest-Api-Practice">
+                                    <a href="https://github.com/sanjayengineer121/Rest-Api-Practice" target="_blank">
                                         <i class="fab fa-buffer mx-auto mb-4"></i>
                                     <h5 class="mb-2">REST API HTTP Practice</h5></a>
                                     <p class="mb-0">REST APIs enable the development of various web applications, supporting all CRUD (Create, Retrieve, Update, Delete) operations. Adhering to REST guidelines involves using specific HTTP methods for different server calls. The following information helps determine the suitable HTTP method for API actions.</p>
@@ -372,147 +270,108 @@
                             </div>
 
                         </div>
-                    </section>
-                    <!-- Services End -->
+            </section>
 
-                    <!-- Portfolio Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Portfolio</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Card Design</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Development</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-1.png" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-1.png" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/special-01.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/special-01.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-4.png" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-4.png" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Portfolio End -->
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-flask"></i></li>
+                        <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-shadow-tal-revivo.png" alt="external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-shadow-tal-revivo"/>  
+                        <li class="list-inline-item"><i class="fa-brands fa-linux"></i>   
+                        <li class="list-inline-item"><i class="fa-solid fa-database"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-aws"></i>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item">Restful APIs</li>
+                        <li class="list-inline-item">Python GUI</li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            350 + Geeks for geeks DSA challenge solved in python <a href="https://www.geeksforgeeks.org/user/cybersecuritytutorials/" target="_blank">cybersecuritytutorials</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Got first in class 12th examination.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Scored O outstanding in major project in <a href="https://www.lpu.in/" target="_blank">LPU</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Division in CEH Certification From Jetking Vasai
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            
+                           Recieved Python,Fundamental of business and international business , many more in University
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Division - in 12<sup>th</sup> and 10 <sup>th</sup> from State Board
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            top 500
+                            <sup>th</sup>
+                            Hack the box platform - Hackathon 2019 <a href="https://app.hackthebox.com/profile/overview" target="_blank">LPU</a> 
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                    <!-- Testimonial Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Testimonial</h1>
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I am using many ads-on which is very userful in day to day life, I asked to develop a add-on for my whatsapp API which can send attachment in Retailgraph Software which is totally based on interprises customer<br><a href="mailto:sureshsaini15@gmail.com">Send Email</a></p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-1.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Suresh Saini</p>
-                                        <i>Retail Graph Sales Team</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I am using whatsapp api and I want store my transactions data in term of table in which i can search and get date,amount and timing and everything without opening tallyprime</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-2.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">TCA (The Computer Admin)</p>
-                                        <i>Wholesales retailers from tallyprime who sales Computer and sevilance Product and computer</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I want a tools which can send pramotion sms according to my needs , I want to send customize payment qr code whuch can directly accept payment from qr code by that qr code can not modify and change amount <br><a href="https://sanjayengineer121.github.io/UPI/pay.html?pa=yadav.154@paytm&pn=Sanjay%20Kumar%20Yadav&am=2&tn=thanks" target="_blank">Click Here To Check</a></p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/testimonial-3.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">R K pharmacy</p>
-                                        <i>Mediacl shop agency</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I am using whatsapp api and I wants Promation ads on from this whatsapp api</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/5.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">shree ram soluytion</p>
-                                        <i>Wholesales retailers from tallyprime who sales Computer and sevilance Product and computer</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I am using whatsapp api and I wants Promation ads on from this whatsapp api</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/6.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">novelty lifestyle</p>
-                                        <i>Wholesales retailers of garments and owner of store</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I am using whatsapp api and I want store my transactions data in term of table in which i can search and get date,amount and timing and everything without opening tallyprime</p>
-                                <div class="d-flex align-items-center">
-                                    <img class="img-fluid" src="img/1.png" style="width: 60px; height: 60px;">
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">VIPIN Store And Bakers</p>
-                                        <i>Wholesales Bakery shop manager</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Testimonial End -->
-
-                    <!-- Contact Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                        <h1 class="title pb-3 mb-5">Contact Me</h1>
+            <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+                <h2 class="mb-5">Contact Me</h2>
 						
                                 <div class="col-12">
                                     <a href="https://api.whatsapp.com/send?phone=916388574919&text=Hello"><button class="btn btn-primary w-50 py-3" type="submit">Contact Through Whatsapp</button></a>
@@ -522,57 +381,14 @@
                                 </div>
                             </div>
                         </form>
-                    </section>
-                    <!-- Contact End -->
+            </section>
 
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-                                <a class="btn btn-dark btn-square mx-1" href="https://twitter.com/engineerstechy"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.facebook.com/HotClubstatus/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://in.linkedin.com/in/ersanjay19"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.instagram.com/creative_edits17"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://github.com/sanjayengineer121"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                            </div>
-                            <div class="d-flex justify-content-center mb-3">
-                                <a class="text-light px-3 border-end" href="#">Privacy</a>
-                                <a class="text-light px-3 border-end" href="#">Terms</a>
-                                <a class="text-light px-3 border-end" href="#">FAQs</a>
-                                <a class="text-light px-3" href="#">Help</a>
-                            </div>
-							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							<p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://in.linkedin.com/in/ersanjay19">Sanjay Yadav</a></p>
-                        </div>
-                    </section>
-                    <!-- Footer End -->
-                </div>
-            </div>
+            <p class="m-0">&copy; All Rights Reserved. Designed by <a href="https://in.linkedin.com/in/ersanjay19">Sanjay Yadav</a></p>
+
         </div>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4549658451295579"
-        crossorigin="anonymous"></script>
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
