@@ -1,391 +1,282 @@
-
 <!DOCTYPE html>
-<html dir='ltr' lang='en' xml__HI__lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang="en">
 <head>
-<title>
-Pay using UPI | Create your own payment links for free
-</title>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<link href='https://fonts.gstatic.com' rel='preconnect'/>
-<script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
-<link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap' rel='stylesheet'/>
-<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap' rel='stylesheet'/>
-<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' rel='stylesheet'/>
-<link href='https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css' rel='stylesheet'/>
-<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtfL-DUA5sWWxR8t_QyvsgD9J18tMCFS0Y8n4_JDS_CGgIWB0UPKgrEL4Z8bj-PWIJhNUCEuuGtvPqNmYX81f3Ot8F5egQtDdBSd-dkYzmL3eur6hcbdyhU2DzRw8ZSDwpbDR6dWVBsToR_QgRfKHihgm5XoRB5Y2hYFniA6u3U4dI-mQZb-sRDCuF/s512/android-chrome-512x512.png' rel='shortcut icon' type='image/x-icon'/>
-<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZQh_PBxwG-tHmIaplSLtOx7Lx7Y2cEhmfOTNpTj1eYkc50pNsW0h1a1rq1-gTK1Ky0APFUqXw7AcS-wwa7G_O0phZm6w2KbcKe3XUSk2wA0uFMWPvUEU1PIKCANkKoKy95Un9Pg5O-7xR9Jdw2fZvpZC4C6UWhseiAst1bVYuX86WKQIhozAXar76/s1600/favicon.ico' rel='icon' type='image/x-icon'/>
-<script>var paymentAddress; var add = window.location.pathname;var key = add.split("/");console.log(add);      console.log(key);if (key.length==2){if (add!="/p/pay.html"){            if(add != "/"){ paymentAddress = key[1]; window.location.href="https://upilink.top/p/pay.html?pa="+ key[1];}}} </script>
-<meta content='#363636' name='theme-color'/>
-<script type='application/ld+json'> 
-{
-  "@context": "http://www.schema.org",
-  "@type": "WebSite",
-  "name": "Create UPI Payment Links for Free ",
-  "alternateName": "UPILink.top - Make Your UPI Address Clickable",
-  "url": "https://sanjayengineer121.github.io"
-}
- </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pay using UPI | Instant QR & App Payment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+      color: #333;
+    }
+    .pay-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .qr-box {
+      border: 3px dashed #dee2e6;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 350px;
+      margin: auto;
+    }
+    .upi-apps img {
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .upi-apps img:hover {
+      transform: scale(1.05);
+    }
+    .upi-btn {
+      border: 2px solid #0d6efd;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0d6efd;
+      font-weight: 600;
+    }
+    .upi-btn:hover {
+      background-color: #0d6efd;
+      color: white;
+      text-decoration: none;
+    }
+    #downloadBtn {
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-
-<style>
-  .pay-title{
-   font-family:'Nunito', sans-serif;
-    font-weight:200;
-    
-  }
-
-</style>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <div class="hero-body">
-    <a href="https://sanjayengineer121.github.io" ><p class="subtitle is-2" style="font-family:'Nunito', sans-serif;">
-      <span style="color:#dd2323;">Er.</span>S<span style="color:#008C3C;">a</span>njay
-      </p></a>
-    <p class="subtitle is-6" style="font-style:italic;">
-      Simple payment links using UPI
-    </p>
-  </div>
-</section>
-
-<br/>
-<div class="box" style="border-style: dashed;border-width: 2px;";>
-   <div class="columns mx-2"> <div class="column"><div class="container has-text-centered" style="margin-bottom: 2%;">
-      
-      <p class="title is-1 pay-title" style="text-align: left;margin-left: 12%;font-size:30px; color: black;">
-      Reciever Payment Details
-      </p> 
-      <div class="box has-text-centred" style="max-width:400px;">
-        <div id="payee" class="subtitle is-3" style="color:blue;text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
-        <div id="amount" class="subtitle is-4" style="color:rgb(255, 174, 0);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" ></div>
-        <div id="name" class="subtitle is-4" style="color:rgb(120, 68, 204);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
-        <div id="note" class="subtitle is-4" style="color:rgba(77, 190, 179, 0.952);text-align:left;margin-left: 15%;font-size:28px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></div>
-        
+  <div class="container py-5">
+    <div class="pay-card">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary">Pay via UPI</h2>
+        <p class="text-muted">Scan QR or choose your UPI app to complete payment</p>
       </div>
-      
-</div></div>
 
-
-<div class="column">
-  <div class="content has-text-centred " id="onlydesktop" style="border-style: solid;border-width: 2px;";>
-
-  <div class="qrborder" id="qrcode" style="width:200px;";>
-  
-    </div>
-  <br/>
-  <div class="container has-text-centred subtitle" style="width:400px;">
-
-Please scan the above QR code using any UPI app on your phone.
-</div>
-
-  </div></div>
-     <div class="container" id="buttons">
-       
-      <p class="subtitle" id="payusing">
-        Pay using:
-      </p>
-
-  <div class="columns is-mobile is-centered" style='margin:0px;'>
-    
-  <div class="column is-narrow-mobile is-narrow is-narrow-desktop is-mobile">
-    <a id="paytm"> <div  class="box" style="width:100px; padding:1rem;">
-     <figure class="image is-80x80">
-       
-  <img class="is-rounded" src="https://play-lh.googleusercontent.com/k7yz57K2OxhNrPNKF2U18Zcv9rodOu7CfWh47U15FFUN8-_B0hQfXsM-BaLG0gOtvw=s180-rw">
-</figure>
-      <div class="has-text-centered block is-size-7"><br/>Paytm</div>
-      </div></a>
-  </div>
-  <div class="column is-narrow-mobile is-narrow is-narrow-desktop is-mobile">
-       <a id="phonepe"> <div class="box" style="width:100px; padding:1rem;">
-     <figure class="image is-80x80">
-  <img class="is-rounded" src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=s180-rw">
-</figure>
-          <div class="has-text-centered block is-size-7"><br/>PhonePe</div>
-         </div></a>
-  </div>
-      <div class="column is-narrow-mobile is-narrow is-narrow-desktop is-mobile">
-            <a id="gpay"> <div class="box" style="width:100px; padding:1rem;">
-     <figure class="image is-80x80">
-  <img class="is-rounded" src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk=s180-rw">
-</figure>
-          <div class="has-text-centered block is-size-7"><br/>Google Pay</div>
-              </div></a>
-  </div>
-</div>
-       
-            <a id="upi"> <div class="box px-6" style="width:100%; height:100px; padding:1rem;">
-    <div class="columns is-mobile is-vcentered">
-              <div class="column is-mobile"><figure class="image is-64x64">
-  <img class="is-rounded" src="https://play-lh.googleusercontent.com/B5cNBA15IxjCT-8UTXEWgiPcGkJ1C07iHKwm2Hbs8xR3PnJvZ0swTag3abdC_Fj5OfnP=s180-rw">
-                </figure></div>
-         <div class="column is-mobile"> <div class="is-size-6">Pick another UPI app</div></div>
-              </div>
-              
-              </div></a>
-
-</div>
-    
-     
-     
-     
-      
-</div>
-<br/> 
-<div class="is-hidden-desktop">
-     <div class="notification is-warning is-light">
-
- 
-
-    
-
-<span class="icon-text has-centred-text">
-
-     
-
-<span class='icon is-pulled-left'>
-
-  <i class="fas fa-exclamation-circle"></i>
-
-  </span>
-
- <span><strong>Note :</strong></span>
-
-</span>
-
- <p>Some apps might have blocked usage of payment links. Paytm is working.</p>
-
-    
-
-</div>
-  </div>
-</div>
-
- 
-  <div class="content has-text-centered">
-    <div class="container"><a class='button is-primary is-rounded is-medium' href='create-link.html'>Create a Payment Link 🔗</a>
-      <!-- <script>
-        window.addEventListener("load", () => {
-          // (C1) CREATE QR
-          var qrc = new QRCode(document.getElementById("qrcode"), {
-            text: "https://code-boxx.com/",
-            width: 100,
-            height: 100,
-            colorDark: "#bf2a2a"
-          });
-        
-          // (C2) PRINT
-          document.getElementById("qrprint").onclick = () => {
-            var printwin = window.open("");
-            printwin.document.write(document.getElementById("printable").innerHTML);
-            printwin.stop();
-            let qr = printwin.document.querySelector("#qrcode img");
-            qr.addEventListener("load", () => {
-              printwin.print();
-              printwin.close();
-            });
-          };
-                </script> -->
-    </div>
-    <p>
-      Sanjay Software service. Copyright Reserved. 2023.
-    </p>
-  </div>
-  
-<script src="cdn.jsdelivr.net_npm_easyqrcodejs@4.3.4_dist_easy.qrcode.min.js"></script>
-
-<script>
-function iniFrame() {
-    if ( window.location !== window.parent.location )
-    {
-      
-       var banner= document.querySelector(".upilink-banner");
-      var footer= document.querySelector(".footer");
-      banner.style.display="none";
-            footer.style.display="none";
-      document.getElementById("attribution").innerHTML="<div class='has-text-centred' style='width:32px;margin:0 auto;'><a href='https://sanjayengineer121.github.io' target='_blank'><figure class='image is-32x32'><img src='logo.png' alt=''></figure></a></div>"
-    } 
-    else {
-          
-    }
-}
-  
-// Calling iniFrame function
-iniFrame();
-</script>
-
-<script>
-  const queryString = window.location.search;
-
-console.log("Q", queryString);
- 
-const urlParams = new URLSearchParams(queryString);
-
-const vpa = urlParams.get("pa");
-const amount = urlParams.get("am");
-  const name = urlParams.get("pn");
-  const note = urlParams.get("tn");
-  
-  
-      window.mobileAndTabletCheck = function() {
-  let check = false;
-  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
-  return check;
-};
-   
-  
-
-  var  urlvalue = "pay?pa="+ vpa;
-  
-  try {
-    
-
-                
- 
-
-if (window.mobileAndTabletCheck()){
-  
- document.getElementById("onlydesktop").style.display="none";
-  
-        
-           
-            
-         if(name!= null){
-            
-              urlvalue += "&pn="+ name;
-          document.getElementById('name').innerHTML+="Name : <strong>"+ name +"</strong>";
-
-            } else {
-              
-              urlvalue  += "&pn=Receiver"; 
-              
-            }
-          
-            urlvalue  += "&am=";
-            
-            if(amount!= null ) {
-             
-              
-              urlvalue  += ""+ amount;
-              
-        document.getElementById('amount').innerHTML+="Amount : <strong>&#8377;"+ amount +"</strong>";
-              
-              
-            }
-  
-        urlvalue  += "&tn=";
-  
-            if(note!= null){
-            
-              urlvalue += ""+ note+"";
-                  document.getElementById('note').innerHTML+="Note : <strong>"+ note +"</strong>";
-            }
-            
-              
-      urlvalue += "&cu=INR";
-  
-    document.getElementById('paytm').href="paytmmp://"+ urlvalue + "";
-   document.getElementById('phonepe').href="phonepe://"+ urlvalue + "";
-     document.getElementById('gpay').href="tez://upi/"+ urlvalue + "";
-  document.getElementById('upi').href="upi://"+ urlvalue + "";
- 
-  
-} else{
-  
-        if(amount!= null ) {
-             
-              
-    document.getElementById('amount').innerHTML+="Amount : <strong>&#8377;"+ amount +"</strong>";
-              
-              
-            }
-  
-      
-  
-    if(name!= null){
-            
-          document.getElementById('name').innerHTML+="Name : <strong>"+ name +"</strong>";
-
-            }
-           
-  
-   
-  
-            if(note!= null){
-                  document.getElementById('note').innerHTML+="Note : <strong>"+ note +"</strong>";
-            }
-          
-
-    var upiString = 'upi://pay/?pa='+ vpa + '&pn='+ name + '&am='+ amount +'&tn='+note+"&cu=INR";
-    
-    document.getElementById("buttons").style.display="none";
-     document.getElementById("payusing").style.display="none"; 
-    var qrcode = new QRCode(document.getElementById("qrcode"), {
-    text: upiString,
-    logo: "logo.png",
-    logoWidth: undefined,
-    logoHeight: undefined,
-    logoBackgroundColor: 'white',
-    dotScale:1.0,
-    backgroundImage:"IMG_20220213_160119.jpg",
-  
-    PO_TL:'#990099', 
-    // PI_TL:'#00994d', // Posotion Inner color - Top Left 
-    PO_TR:'#990099', // Posotion Outer color - Top Right 
-    // PI_TR:'#cc0066', // Posotion Inner color - Top Right 
-    PO_BL:'#990099', // Posotion Outer color - Bottom Left 
-    // PI_BL:"#3b00b3",
-
-    // AO: '#0000cc', // Alignment Outer. if not set, the defaut is `colorDark`
-    // AI: '#ff3399', // Alignment Inner. if not set, the defaut is `colorDark`
-
-    dotScaleA:1.0,
-    dotScaleAO:1.0,
-    dotScaleAI:1.0,
-    hideBackgroundDots:false,
-    logoBackgroundTransparent: true,
-    version: 5,
-    binary: false,
-    quietZone: 0,
-    quietZoneColor: "rgba(0,0,0,0)",
-    drawer: 'canvas'
-
-    
-});
-
-
-  document.getElementById("qrcode").style.marginLeft="auto";
-    document.getElementById("qrcode").style.marginRight="auto";
-
-}
-
- 
-  }
-  catch (e){}
-    
-
-  
-  if (vpa!=null){document.getElementById('payee').innerHTML+=" "+ vpa +"";} else{ document.getElementById('payee').innerHTML+="Create a link first using the button below!"; document.getElementById('onlydesktop').style.display="none"; }
-
-    document.title = "Pay "+vpa+" using UPI - UPILink.top | Create your own payment links for free";
-    
-</script>
-
-<div style='clear: both;'></div>
-</div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="qr-box" aria-label="QR code and download button">
+            <div id="qrcode"></div>
+            <p class="mt-3 text-muted small">Scan this code in any UPI app</p>
+            <button id="downloadBtn" class="btn btn-primary btn-sm" aria-label="Download QR code with details">
+              Download QR Code
+            </button>
+          </div>
         </div>
-        
-      </div>      
-</div>
-</div></div>
-  });
 
+        <div class="col-md-6">
+          <h5 class="text-secondary">Receiver Details</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              UPI ID: <strong id="payee">-</strong>
+            </li>
+            <li class="list-group-item">
+              Name: <strong id="name">-</strong>
+            </li>
+            <li class="list-group-item">
+              Amount: <strong id="amount">-</strong>
+            </li>
+            <li class="list-group-item">
+              Note: <strong id="note">-</strong>
+            </li>
+          </ul>
 
+          <div class="mt-4" id="buttons">
+            <p class="fw-semibold">Pay using:</p>
+            <div class="d-flex gap-3 upi-apps">
+              <a id="paytm" class="text-decoration-none" target="_blank" rel="noopener">
+                <img
+                  src="https://play-lh.googleusercontent.com/k7yz57K2OxhNrPNKF2U18Zcv9rodOu7CfWh47U15FFUN8-_B0hQfXsM-BaLG0gOtvw=s180-rw"
+                  width="60"
+                  alt="Paytm"
+                />
+              </a>
+              <a id="phonepe" class="text-decoration-none" target="_blank" rel="noopener">
+                <img
+                  src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=s180-rw"
+                  width="60"
+                  alt="PhonePe"
+                />
+              </a>
+              <a id="gpay" class="text-decoration-none" target="_blank" rel="noopener">
+                <img
+                  src="https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk=s180-rw"
+                  width="60"
+                  alt="Google Pay"
+                />
+              </a>
+              <a id="upi" class="text-decoration-none upi-btn" href="#" target="_blank" rel="noopener"
+                >Other</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="create-link.html" class="btn btn-outline-primary rounded-pill px-4"
+          >Create a Payment Link 🔗</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const vpa = params.get("pa") || "";
+    const amount = params.get("am") || "";
+    const name = params.get("pn") || "Receiver";
+    const note = params.get("tn") || "";
+
+    document.getElementById("payee").textContent = vpa || "-";
+    document.getElementById("amount").textContent = amount ? `₹${amount}` : "-";
+    document.getElementById("name").textContent = name;
+    document.getElementById("note").textContent = note || "-";
+
+    const urlvalue = `pay?pa=${encodeURIComponent(
+      vpa
+    )}&pn=${encodeURIComponent(name)}&am=${encodeURIComponent(
+      amount
+    )}&tn=${encodeURIComponent(note)}&cu=INR`;
+
+    document.getElementById("paytm").href = `paytmmp://${urlvalue}`;
+    document.getElementById("phonepe").href = `phonepe://${urlvalue}`;
+    document.getElementById("gpay").href = `tez://upi/${urlvalue}`;
+    document.getElementById("upi").href = `upi://${urlvalue}`;
+
+    const qr = new QRCodeStyling({
+      width: 320,
+      height: 320,
+      type: "canvas",
+      data: `upi://pay?pa=${vpa}&pn=${name}&am=${amount}&tn=${note}&cu=INR`,
+      // Removed the image property to avoid tainting the canvas
+      dotsOptions: {
+        color: "#1e88e5",
+        type: "rounded",
+      },
+      cornersSquareOptions: {
+        color: "#1e88e5",
+        type: "extra-rounded",
+      },
+      backgroundOptions: {
+        color: "#ffffff",
+      },
+    });
+    qr.append(document.getElementById("qrcode"));
+
+    // Logos data to draw below QR in download
+    const logos = [
+      {
+        src:
+          "https://play-lh.googleusercontent.com/k7yz57K2OxhNrPNKF2U18Zcv9rodOu7CfWh47U15FFUN8-_B0hQfXsM-BaLG0gOtvw=s180-rw",
+        alt: "Paytm",
+      },
+      {
+        src:
+          "https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=s180-rw",
+        alt: "PhonePe",
+      },
+      {
+        src:
+          "https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk=s180-rw",
+        alt: "Google Pay",
+      },
+    ];
+
+    document.getElementById("downloadBtn").addEventListener("click", async () => {
+      try {
+        const canvasQR = document.querySelector("#qrcode canvas");
+        if (!canvasQR) throw new Error("QR code canvas not found");
+
+        // Create new canvas for combined image
+        const width = 400;
+        const height = 540; // enough for QR + text + logos
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext("2d");
+
+        // White background
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, width, height);
+
+        // Draw QR code canvas on top
+        const qrX = (width - 320) / 2;
+        ctx.drawImage(canvasQR, qrX, 10, 320, 320);
+
+        // Draw text below QR
+        ctx.fillStyle = "#1e88e5";
+        ctx.font = "bold 18px Poppins, sans-serif";
+        ctx.textAlign = "center";
+
+        ctx.fillText(`UPI ID: ${vpa}`, width / 2, 350);
+        ctx.fillText(`Name: ${name}`, width / 2, 380);
+        ctx.fillText(`Amount: ₹${amount}`, width / 2, 410);
+
+        // Draw app logos below text
+        const logosY = 440;
+        const logoSize = 50;
+        const gap = 20;
+        const totalWidth = logos.length * logoSize + (logos.length - 1) * gap;
+        let startX = (width - totalWidth) / 2;
+
+        // Draw logos asynchronously
+        for (const logo of logos) {
+          await new Promise((resolve) => {
+            const img = new Image();
+            img.crossOrigin = "anonymous"; // avoid canvas taint
+            img.onload = () => {
+              ctx.drawImage(img, startX, logosY, logoSize, logoSize);
+              startX += logoSize + gap;
+              resolve();
+            };
+            img.onerror = () => {
+              // fallback grey box on error
+              ctx.fillStyle = "#ccc";
+              ctx.fillRect(startX, logosY, logoSize, logoSize);
+              startX += logoSize + gap;
+              resolve();
+            };
+            img.src = logo.src;
+          });
+        }
+
+        // Trigger download of combined image
+        const dataURL = canvas.toDataURL("image/png");
+        const a = document.createElement("a");
+        a.href = dataURL;
+        a.download = "upi-payment-qr.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      } catch (error) {
+        alert("Failed to download QR code: " + error.message);
+      }
+    });
+  </script>
 </body>
-<style id='page-skin-1' type='text/css'><!--
-#main{
-padding:0 !important;
-}
-
---></style>
 </html>
